@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade-4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+
+    <div class="menu header">
+        <div class="container">
+            <div class="menu__wrapper header__wrap">
+                <img src="img/logo.png" alt="" class="header__logo menu__logo ">
+                <div class="header__play desktop">
+
+                </div>
+                <ul class="header__list desktop">
+                    <li class="header__nav"><a href="#book" class="header__navig">Книги</a></li>
+                    <li class="header__nav"><a href="#magic" class="header__navig">Заклинания</a></li>
+                    <li class="header__nav"><a href="#contactUs" class="header__navig">Обратная связь</a></li>
+                </ul>
+                <div class="menu__burger burger js-burger" data-target="#js-mobile-menu"><span
+                        class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span>
+                </div>
+            </div>
+            <div class="menu-mobile" id="js-mobile-menu">
+                <div class="menu-mobile__wrap">
+                    <div class="menu-mobile__top">
+                        <img src="img/logo.png" alt="" class="header__logo menu__logo">
+                        <div class="header__play">
+
+                        </div>
+                        <div class="burger js-burger" data-target="#js-mobile-menu"><span
+                                class="burger__line"></span><span class="burger__line"></span><span
+                                class="burger__line"></span></div>
+                    </div>
+
+                    <ul class="menu-mobile__menu nav-list">
+                        <li class="header__nav nav-list__item"><a href="#book"
+                                class="header__nav nav-list__link js-scroll">Книги</a></li>
+                        <li class="header__nav nav-list__item"><a href="#magic"
+                                class="header__nav nav-list__link js-scroll">Заклинания</a></li>
+                        <li class="header__nav nav-list__item"><a href="#contactUs"
+                                class="header__nav nav-list__link js-scroll">Обратная связь</a></li>
+                    </ul>
+                    <div class="last"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fade hide">
+    </div>
+    <form class="popup hide dots-background">
+        <div class="popup__wrapper popup__first active">
+            <h2 class="popup__title">Выберите все 3 непростительных
+                проклятия.</h2>
+            <div class="popup__check check">
+                <div class="check__wrap">
+                    <label class="check__item">
+                        <input name="Империус" class="check__input" type="checkbox" value="true">
+                        <span class="check__text"> Империус</span>
+                    </label>
+                    <label class="check__item">
+                        <input class="check__input" type="checkbox" name="Бомбардо">
+                        <span class="check__text">Бомбардо</span>
+                    </label>
+
+                </div>
+                <div class="check__wrap">
+                    <label class="check__item"><input class="check__input" type="checkbox" name="Конфундо"><span
+                            class="check__text">Конфундо</span></label>
+                    <label class="check__item"><input class="check__input" type="checkbox" name="Круциатус"
+                            value="true"><span class="check__text">Круциатус</span></label>
+                </div>
+                <div class="check__wrap">
+                    <label class="check__item"><input class="check__input" type="checkbox" name="Экспеллиармус"><span
+                            class="check__text">Экспеллиармус</span></label>
+
+                    <label class="check__item"><input class="check__input" type="checkbox" name="Авада Кедавра"
+                            value="true"><span class="check__text">Авада Кедавра</span></label>
+                </div>
+            </div>
+            <span class="btn popup__btn js-next">Следующий вопрос</span>
+        </div>
+        <div class="popup__wrapper popup__second">
+            <h2 class="popup__title">Закончите надпись на надгробии Добби: «Здесь лежит Добби ... »</h2>
+            <div class="popup__check radio">
+                <div class="radio__wrap">
+                    <label class="radio__item">
+                        <input value="'Настоящий друг'" class="radio__input" type="radio" name="radio-check">
+                        <span class="radio__text"> 'Настоящий друг'</span>
+                    </label>
+                    <label class="radio__item">
+                        <input class="radio__input" value="'Свободный эльф'" type="radio" name="radio-check">
+                        <span class="radio__text"> 'Свободный эльф'</span>
+                    </label>
+                </div>
+                <div class="radio__wrap">
+                    <label class="radio__item">
+                        <input class="radio__input" type="radio" value="'Лучший слуга'" name="radio-check">
+                        <span class="radio__text"> 'Лучший слуга'</span>
+                    </label>
+                    <label class="radio__item">
+                        <input class="radio__input" type="radio" name="radio-check" value="'Мастер носков'">
+                        <span class="radio__text">'Мастер носков'</span>
+                    </label>
+                </div>
+            </div>
+            <span class="btn popup__btn js-next">Следующий вопрос</span>
+        </div>
+        <div class="popup__wrapper popup__third">
+            <h2 class="popup__title">Сколько лет длится обучение
+                в Хогвартсе?</h2>
+            <div class="popup__range range">
+                <div class="range__wrap">
+                    <span class="range__start">0</span>
+                    <input class="range__input" min="0" max="10" type="range">
+                    <span class="range__midle">5</span>
+
+                    <span class="range__finish">10</span>
+                </div>
+            </div>
+            <span class="btn popup__btn js-next">Посмотреть результат</span>
+        </div>
+    </form>
+    <div class="main">
+        <div class="container">
+            <div class="main__wrap">
+                <div class="cabinet main__cabinet">
+
+                    <div class="main__3d-cabinet cabinet-3d">
+                        <div class="main__cabinet cabinet cabinet-3d__cube">
+
+                            <div class="cabinet__bottom bottom cabinet-3d__front">
+
+                                <div class="bottom__in">
+                                    <div class="bottom__second">
+                                        <img src="img/wing-1.png" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="cabinet-3d__side cabinet-3d__top"></div>
+                            <div class="cabinet-3d__side cabinet-3d__left "></div>
+                            <div class="cabinet-3d__side cabinet-3d__right"></div>
+                        </div>
+                    </div>
+                    <div class="main__3d-cabinet cabinet-3d">
+                        <div class="main__cabinet cabinet cabinet-3d__cube">
+                            <div class="cabinet__top top cabinet-3d__front">
+                                <canvas class="top__tr" id="canvas" width="143" height="138"></canvas>
+                                <div class="top__in">
+
+                                    <div class="top__back">
+                                        <img src="img/wing.png" alt="">
+                                    </div>
+
+                                    <div class="top__shelf"></div>
+                                    <div class="top__object object">
+                                        <div class="object__cube">
+
+                                            <div class="object__side object__front"><img class="object__img"
+                                                    src="img/b1.png" alt=""></div>
+                                            <div class="object__side object__right"><img class="object__img"
+                                                    src="img/book3.png" alt=""></div>
+
+                                        </div>
+                                        <div class="object__cube">
+
+                                            <div class="object__side object__front"><img class="object__img"
+                                                    src="img/b2.png" alt=""></div>
+                                            <div class="object__side object__right"><img class="object__img"
+                                                    src="img/book2jpg.jpg" alt=""></div>
+
+                                        </div>
+                                        <div class="object__cube">
+
+                                            <div class="object__side object__front"><img class="object__img"
+                                                    src="img/b3.png" alt=""></div>
+                                            <div class="object__side object__right"><img class="object__img"
+                                                    src="img/book1.jpg" alt=""></div>
+
+                                        </div>
+                                        <div class="object__cube">
+                                            <div class="object__side object__front"><img class="object__img"
+                                                    src="img/b2.png" alt=""></div>
+                                            <div class="object__side object__right"><img class="object__img"
+                                                    src="img/book2jpg.jpg" alt=""></div>
+
+                                        </div>
+                                        <div class="object__cube">
+
+                                            <div class="object__side object__front"><img class="object__img"
+                                                    src="img/b1.png" alt=""></div>
+                                            <div class="object__side object__right"><img class="object__img"
+                                                    src="img/book3.png" alt=""></div>
+
+                                        </div>
+                                        <div class="object__cube">
+                                            <div class="object__side object__front"><img class="object__img"
+                                                    src="img/b3.png" alt=""></div>
+                                            <div class="object__side object__right"><img class="object__img"
+                                                    src="img/book1.jpg" alt=""></div>
+
+                                        </div>
+                                        <div class="object__cube">
+                                            <div class="object__side object__front"><img class="object__img"
+                                                    src="img/b1.png" alt=""></div>
+                                            <div class="object__side object__right"><img class="object__img"
+                                                    src="img/book3.png" alt=""></div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <div class="cabinet-3d__side cabinet-3d__left "></div>
+                            <div class="cabinet-3d__side cabinet-3d__right"></div>
+                        </div>
+                    </div>
+                    <div class="main__3d-cabinet cabinet-3d">
+                        <div class="main__cabinet cabinet cabinet-3d__cube">
+                            <div class="cabinet__bottom bottom cabinet-3d__front">
+
+                                <div class="bottom__in">
+                                    <div class="bottom__second">
+                                        <img src="img/wing-1.png" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="cabinet-3d__side cabinet-3d__left "></div>
+                            <div class="cabinet-3d__side cabinet-3d__right"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main__center center" id="cap">
+                    <div class="center__top">
+                        <div class="main__shelf">
+                            <div class="shelf__wrap">
+                                <div class="shelf__cap cap">
+
+                                    <img src="img/cap.png" alt="" title="Узнай на каком ты факультете" class="cap__img">
+                                    <p class="cap__name hide">Факультет</p>
+                                </div>
+                            </div>
+                            <div class="shelf__wood">
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="clock">
+                            <div class="clock__wrap">
+                                <span class="clock__part clock__white"></span>
+                                <span class="clock__part clock__white"></span>
+                                <span class="clock__part clock__white"></span>
+                                <span class="clock__part clock__white"></span>
+                                <span class="clock__part clock__dots"></span>
+                                <span class="clock__part clock__dots"></span>
+                                <span class="clock__part clock__dots"></span>
+                                <span class="clock__part clock__dots"></span>
+                                <span class="clock__part clock__dots"></span>
+                                <span class="clock__part clock__dots"></span>
+                                <span class="clock__part clock__dots"></span>
+                                <span class="clock__part clock__dots"></span>
+                            </div>
+                            <div class="clock__in">
+                                <div class="hour">
+                                    <div class="hr"></div>
+                                </div>
+                                <div class="min">
+                                    <div class="mn"></div>
+                                </div>
+                                <div class="sec">
+                                    <div class="sc"></div>
+                                </div>
+                                <img src="img/wing.png" alt="" class="clock__img">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="box-3d">
+                        <div class="box-3d__cube">
+
+                            <div class="box-3d__front box">
+
+                                <div class="box__bottom">
+                                    <div class="box__lock lock">
+                                        <img class="lock__img" src="img/lock.png" alt="">
+                                    </div>
+                                    <div class="box__m"></div>
+                                    <div class="box__m"></div>
+                                    <div class="box__m"></div>
+                                </div>
+                                <div class="box__result result">
+                                    <div class="result__win">
+                                        Вы успешно прошли тест.
+                                    </div>
+                                    <div class="result__lose">Вы не прошли тест.<br>
+                                        Вы набрали <span class="result__check">1</span> из 5.<br>
+
+                                        Попробуйте еще раз</div>
+                                </div>
+                            </div>
+                            <div class="box-3d__side box-3d__back"></div>
+                            <div class="box-3d__side box-3d__left"></div>
+                            <div class="box-3d__side box-3d__right"></div>
+                            <div class="box-3d__side box-3d__top top-3d">
+                                <div class="box__top top-3d__cube">
+
+                                    <div class="top-3d__side top-3d__right"></div>
+                                    <div class="top-3d__side top-3d__left"></div>
+                                    <div class="top-3d__side top-3d__front">
+                                        <div class="box__sm"></div>
+                                        <div class="box__sm"></div>
+                                        <div class="box__sm"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="main__test test dots-background d-test">
+                    <h2 class="test__title">Проверь себя</h2>
+                    <p class="test__text">Насколько хорошо
+                        ты знаешь вселенную
+                        Гарри Поттера</p>
+                    <span class="btn test__btn js-test">Попробовать</span>
+                </div>
+            </div>
+
+        </div>
+
+        <form id="myForm">
+            <input name="firstQ" value="" type="hidden">
+            <input name="secondQ" value="" type="hidden">
+            <input name="thirdQ" value="" type="hidden">
+        </form>
+    </div>
+    <div class="mob-test container">
+        <div class="main__test test dots-background">
+            <h2 class="test__title">Проверь себя</h2>
+            <p class="test__text">Насколько хорошо
+                ты знаешь вселенную
+                Гарри Поттера</p>
+            <span class="btn test__btn js-test">Попробовать</span>
+        </div>
+    </div>
+
+    <div class="book" id="book">
+        <div class="container">
+            <div class="book__wrapper">
+                <h2 class="book__title title">Книги о Гарри Поттере</h2>
+                <div class="book__item">
+                    <div class="book__flip dots-background">
+                        <div class="book__front  dots-background">
+                            <img src="img/1.jpg" alt="" class="book__img">
+                            <h3 class="book__text">Гарри Поттер<br> и философский камень</h3>
+                        </div>
+                        <p class="book__back  dots-background">
+                            В книге рассказывается, как Гарри узнает, что он волшебник, встречает близких друзей и
+                            немало
+                            врагов в Школе Чародейства и Волшебства «Хогвартс», а также с помощью своих друзей пресекает
+                            попытку возвращения злого волшебника Волан-де-Морта, который убил родителей Гарри
+                        </p>
+                    </div>
+                </div>
+                <div class="book__item">
+                    <div class="book__flip dots-background">
+                    <div class="book__front dots-background">
+                        <img src="img/2.jpg" alt="" class="book__img">
+                        <h3 class="book__text">Гарри Поттер<br> и Тайная комната </h3>
+                    </div>
+                    <p class="book__back dots-background">
+                        Книга рассказывает о втором учебном годе в школе чародейства и волшебства Хогвартс, на котором
+                        Гарри и его друзья расследуют таинственные нападения на учеников школы, совершаемые неким
+                        «Наследником Слизерина». Объектами нападений являются маглорожденные ученики. Все пострадавшие
+                        находятся в оцепенении и ни на что не реагируют.
+                    </p>
+                    </div>
+                </div>
+                <div class="book__item">
+                    <div class="book__flip dots-background">
+                    <div class="book__front dots-background">
+                        <img src="img/3jpg.jpg" alt="" class="book__img">
+                        <h3 class="book__text">Гарри Поттер<br> и узник Азкабана</h3>
+                    </div>
+                    <p class="book__back dots-background">
+                        В третьей книге Гарри Поттер, учащийся на 3-м курсе школы чародейства и волшебства Хогвартс,
+                        вместе со своими друзьями Роном Уизли и Гермионой Грейнджер узнает историю Сириуса Блэка —
+                        бежавшего из тюрьмы Азкабан волшебника, который подозревается в работе на лорда Волан-де-Морта и
+                        о его роли в своей жизни.
+                    </p>
+                    </div>
+                </div>
+                <div class="book__item">
+                    <div class="book__flip dots-background">
+                    <div class="book__front dots-background">
+                        <img src="img/4.jpg" alt="" class="book__img">
+                        <h3 class="book__text">Гарри Поттер<br> и Кубок Огня</h3>
+                    </div>
+                    <p class="book__back dots-background">
+                        По сюжету Гарри Поттер против своей воли вовлекается в участие в Турнире Трёх Волшебников, и ему
+                        предстоит не только сразиться с более опытными участниками, но и разгадать загадку того, как он
+                        вообще попал на турнир вопреки правилам.
+                    </p>
+                    </div>
+                </div>
+                <div class="book__item">
+                    <div class="book__flip dots-background">
+                    <div class="book__front dots-background">
+                        <img src="img/5.jpg" alt="" class="book__img">
+                        <h3 class="book__text">Гарри Поттер<br> и Орден Феникса</h3>
+                    </div>
+                    <p class="book__back dots-background">
+                        Во время летних каникул на Гарри Поттера и его кузена Дадли Дурсля нападают дементоры, и Гарри
+                        вынужден применить заклятие Патронуса, чтобы спастись, однако тут же на имя Гарри приходит
+                        письмо, в котором его исключают из школы за применение магии на глазах у маглов.
+                    </p>
+                    </div>
+                </div>
+                <div class="book__item">
+                    <div class="book__flip dots-background">
+                    <div class="book__front dots-background">
+                        <img src="img/6.jpg" alt="" class="book__img">
+                        <h3 class="book__text">Гарри Поттер<br> и Принц-полукровка</h3>
+                    </div>
+                    <p class="book__back dots-background">
+                        Началась вторая война волшебников между силами Волан-де-Морта и силами Ордена Феникса: о терроре
+                        Волан-де-Морта становится известно даже британскому премьер-министру от Руфуса Скримджера.
+                        Гарри, который минувшим летом помешал Волан-де-Морту осуществить опасные планы, с Альбусом
+                        Дамблдором покидает дом и отправляется на встречу с зельеваром Горацием Слизнортом.
+                    </p>
+                    </div>
+                </div>
+                <div class="book__item ">
+                    <div class="book__flip dots-background">
+                    <div class="book__front dots-background">
+                        <img src="img/7.jpg" alt="" class="book__img">
+                        <h3 class="book__text">Гарри Поттер<br> и Дары Смерти</h3>
+                    </div>
+                    <p class="book__back dots-background">
+                        На заброшенной дороге встречаются Северус Снегг и
+                        Яксли, которые стремятся попасть в дом Люциуса Малфоя, где у них назначена встреча с
+                        Волан-де-Мортом. В ходе разговора Сириус говорит, что Орден Феникса планирует переместить
+                        Поттера в дом одного из членов общества. Якобы, транспортировка состоится 30 июля. Темный маг
+                        решает напасть на Гарри в ходе транспортировки.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="spell back" id="magic">
+        <div class="spell__img"><img src="img/magic.png" alt=""><span class="flare"></span></div>
+        <div class="spell__img"><img src="img/magic.png" alt=""><span class="flare"></span></div>
+        <div class="container">
+
+
+            <div class="spell__wrapper dots-background">
+                <div class="spell__prev">
+                    <p class="spell__intro">Пришла пора взглянуть на вселенную чародейства и волшебства с другого
+                        ракурса и поговорить об заклятиях.
+                        И пока магглы заняты своими совсем не волшебными делами узнай случайное заклинание</p>
+                    <span class="spell__btn btn">let’s the magic begin</span>
+                </div>
+                <div class="spell__choice hide">
+                    <!-- <img src="img/magic-w.png" class="spell__new" alt=""> -->
+                    <h3 class="spell__title"></h3>
+                    <p class="spell__info"></p>
+                    <p class="spell__quote"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contactUs">
+        <div class="container">
+            <h2 class="contact__title title">Хотите узнать больше, пришлите сову с вопросом</h2>
+            <div class="contact__wrapper">
+                <a href="#cap" class="contact__wrap contact__before dots-background">
+                    <img src="img/all_home.png" alt="" class="contact__home">
+                    <p class="contact__problem">Перед тем как отправить сову пусть шляпа распределит тебя на факультет
+                    </p>
+                </a>
+                <form class="contact__form dots-background hide" id="contact">
+                    <img src="img/pngegg.png" alt="" class="contact__owl">
+                    <input type="hidden" name="Факультет" class="contact__department" value="">
+                    <label class="contact__item">
+                        <span class="contact__text">Ваше имя,<br> о Великий волшебник</span>
+                        <input class="contact__input" type="text" name="Имя" placeholder="Имя" required>
+                    </label>
+                    <label class="contact__item">
+                        <span class="contact__text">Куда слать сову?</span>
+                        <input class="contact__input" type="email" name="Почта" placeholder="Email" required>
+                    </label>
+                    <label class="contact__item">
+                        <span class="contact__text">Задайте свой вопрос</span>
+                        <textarea class="contact__input" required placeholder="Вопрос" name="Вопрос"></textarea>
+                    </label>
+                    <button class="btn contact__btn">Отправить сову</button>
+                    <p class="contact__send hide">
+                        Спасибо!<br> Ваше письмо улетело.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="music">
+        <audio class="music__start" src="audio/start.mp3"></audio>
+        <audio class="music__test" src="audio/test.mp3"></audio>
+        <audio class="music__clock" src="audio/clock.mp3"></audio>
+        <audio class="music__fail" src="audio/fail.mp3"></audio>
+    </div>
+    <div class="overlay js-overlay"></div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
